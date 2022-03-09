@@ -1,0 +1,23 @@
+@use 'fonts';
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    max-width: 1500px;
+    width: 90%;
+}
+
+@media  screen and (max-width: 600px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+    } 
+}
