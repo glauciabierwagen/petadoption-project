@@ -1,14 +1,79 @@
 @use 'fonts';
+@use 'colors';
+@import 'colors';
+@import 'fonts';
 
+body {
+    color: $dark;
+}
 .section__header {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    padding: 10px 10px;
 }
-
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
 ul {
+    display: inline-flex;
     list-style-type: none;
+    align-items: center;
+    justify-content: center;
 }
-
 a {
     text-decoration: none;
+}
+ul a {
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.logo-text {
+    font-family: $logo-font;
+    color: $purple;
+    font-size: 32px;
+}
+.logo-image i {
+    font-size: 30px;
+    padding: 6px;
+    border-radius: 50%;
+    border: 3px solid $purple;
+    color: $purple;
+}
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.main__text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-height: 550px;
+}
+.small {
+    font-size: 25px;
+    font-weight: 400;
+}
+span {
+    color: $purple;
+}
+.title {
+    font-size: 50px;
+}
+button {
+    background-color: $teal;
+    max-width: 100px;
+    height: 40px;
+    padding: 6px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    color: $white;
+    border: none
 }
