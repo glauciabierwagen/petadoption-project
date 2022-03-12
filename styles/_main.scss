@@ -1,19 +1,48 @@
 @use 'fonts';
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
+@use 'colors';
+@import 'colors';
 
 .section {
     width: 100%;
-    width: 90%;
 }
+.main {
+    min-height: 100vh;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+.main__text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-height: 500px;
+    justify-content: center;
+    margin-left: 20px;
+}
+.small {
+    font-size: 25px;
+    font-weight: 400;
+}
+span {
+    color: $purple;
+}
+.title {
+    font-size: 50px;
+}
+button {
+    background-color: $teal;
+    max-width: 100px;
+    height: 40px;
+    padding: 6px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    color: $white;
+    border: none
+}
+.main__image {
+    width: 50%; 
+}
+
 
 @media  screen and (max-width: 600px) {
     .section {
