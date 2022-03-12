@@ -10,11 +10,19 @@ body {
     display: flex;
     justify-content: center;
     padding: 10px 10px;
+    background-color: $white;
+    min-height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
 }
 .header__nav {
     display: flex;
+
     justify-content: space-between;
-    width: 90%;
+    width: 85%;
+    margin-top: 10px;
 }
 ul {
     display: inline-flex;
@@ -35,7 +43,7 @@ ul a {
 .logo-text {
     font-family: $logo-font;
     color: $purple;
-    font-size: 32px;
+    font-size: 35px;
 }
 .logo-image i {
     font-size: 30px;
@@ -43,4 +51,5 @@ ul a {
     border-radius: 50%;
     border: 3px solid $purple;
     color: $purple;
+    margin-right: 6px;
 }

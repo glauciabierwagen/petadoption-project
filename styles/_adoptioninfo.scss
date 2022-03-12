@@ -1,0 +1,28 @@
+@use 'mixins';
+@import 'mixins';
+
+.adoptioninfo {
+    display: flex;
+    justify-content: center;
+}
+.adoptioninfo__container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+}
+.adoptioninfo__textbox { 
+    display: flex;
+    width: 35%;
+    max-height: 600px;
+    align-items: center;
+}
+.adoptioninfo__imagebox { 
+    display: flex;
+    width: 50%;
+}
+
+button {
+    @include mybutton;
+}
+
