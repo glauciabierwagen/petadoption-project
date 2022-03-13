@@ -1,11 +1,12 @@
 main {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-width: 1500px;
 }
 
 .main__container {
@@ -32,11 +33,11 @@ main {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 50%;
+  width: 60%;
   max-height: 500px;
   font-family: "Montserrat", sans-serif;
   margin-top: 35px;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 .main__text-box-txt {
@@ -59,7 +60,7 @@ main {
 }
 
 .title {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .main__text-box button {
@@ -89,13 +90,12 @@ main {
       -ms-flex-align: center;
           align-items: center;
   width: 70%;
-  max-height: 800px;
   margin-left: 40px;
 }
 
 .main__image img {
-  width: 700px;
-  height: 700px;
+  max-width: 700px;
+  max-height: 750px;
 }
 
 .main__scroll {
@@ -182,7 +182,7 @@ body {
 .header__nav ul a {
   text-decoration: none;
   margin-right: 15px;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: 500;
   color: #7800B7;
@@ -192,14 +192,14 @@ body {
 .logo-text {
   font-family: "Lemon", sans-serif;
   color: #7800B7;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .logo-image i {
-  font-size: 30px;
+  font-size: 27px;
   padding: 6px;
   border-radius: 50%;
-  border: 3px solid #7800B7;
+  border: 2px solid #7800B7;
   color: #7800B7;
   margin-right: 6px;
 }
@@ -222,10 +222,9 @@ body {
 }
 
 .footer {
-  width: 100%;
   background: #7800B7;
-  display: block;
   color: #FFFFFF;
+  width: 100%;
 }
 
 .inner-footer {
@@ -235,10 +234,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -262,8 +257,9 @@ body {
 .footer__logo i {
   border-radius: 50px;
   padding: 8px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   color: #FFFFFF;
+  margin-right: 5px;
 }
 
 .footer-items p {
@@ -364,6 +360,7 @@ body {
 
 .container {
   min-height: 500px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,7 +375,7 @@ body {
 
 .carousel {
   position: relative;
-  height: 500px;
+  min-height: 500px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,8 +395,8 @@ body {
   position: relative;
   background: #fff;
   border-radius: 20px;
+  min-height: 350px;
   margin: 20px 0;
-  min-height: 400px;
   -webkit-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 }
@@ -430,18 +427,18 @@ body {
 }
 
 section .card .image {
-  height: 140px;
-  width: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 50%;
   padding: 3px;
   background: #7800B7;
 }
 
 .carousel .card .image img {
-  height: 100%;
   width: 100%;
-  width: 220px;
-  height: 220px;
+  height: 150px;
+  width: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -478,11 +475,12 @@ section .card .image {
   opacity: 0.3;
 }
 
-/*
 .card .card-icon i:hover {
-    transform: scale(1.2);
-    opacity: 1;
-}*/
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.9;
+}
+
 .card .card-name {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,13 +553,8 @@ section .card .image {
   color: #7800B7;
 }
 
-.card-heart {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-}
-
 .adoptioninfo {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,6 +565,7 @@ section .card .image {
 }
 
 .adoptioninfo__container {
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,7 +573,7 @@ section .card .image {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  min-height: 680px;
+  min-height: 450px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -600,7 +594,11 @@ section .card .image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 40%;
+}
+
+.adoptioninfo__imagebox img {
+  max-height: 500px;
 }
 
 .adoptioninfo button {
@@ -670,7 +668,7 @@ section .card .image {
   border-radius: 50px;
   padding: 20px;
   border: 3px solid #00BBBB;
-  font-size: 40px;
+  font-size: 25px;
 }
 
 .icon-box h3 {
@@ -689,4 +687,7 @@ section .card .image {
 
 body {
   font-family: "Montserrat", sans-serif;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }

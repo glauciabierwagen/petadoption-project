@@ -6,9 +6,10 @@
 
 
 main {
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: center;
+    min-width: 1500px;
 }
 .main__container {
     min-height: 100vh;
@@ -22,11 +23,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 50%;
+    width: 60%;
     max-height: 500px;
     font-family: $main-font; 
     margin-top: 35px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 .main__text-box-txt {
     display: flex;
@@ -39,7 +40,7 @@ main {
     @include smallTitle;
 }
 .title {
-    font-size: 60px;
+    font-size: 50px;
 }
 .main__text-box button {
     @include mybutton;
@@ -51,12 +52,11 @@ main {
     display: flex;
     align-items: center;
     width: 70%; 
-    max-height: 800px;
     margin-left: 40px;
 }
 .main__image img {
-    width: 700px;
-    height: 700px;
+    max-width: 700px;
+    max-height: 750px;
 }
 .main__scroll {
     display: flex;

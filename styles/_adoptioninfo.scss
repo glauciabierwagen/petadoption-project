@@ -3,14 +3,16 @@
 
 
 .adoptioninfo {
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
 .adoptioninfo__container {
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
-    min-height: 680px;
+    min-height: 450px;
     justify-content: center;
 }
 .adoptioninfo__textbox { 
@@ -21,8 +23,12 @@
 }
 .adoptioninfo__imagebox { 
     display: flex;
-    width: 50%;
+    width: 40%;
 }
+.adoptioninfo__imagebox img { 
+    max-height: 500px;
+}
+
 .adoptioninfo button {
     @include mybutton;
     margin-top: 25px;
@@ -57,7 +63,7 @@
     border-radius: 50px;
     padding: 20px;
     border: 3px solid $teal;
-    font-size: 40px;
+    font-size: 25px;
 }
 .icon-box h3 {
     margin-top: 20px;
