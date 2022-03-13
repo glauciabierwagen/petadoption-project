@@ -25,6 +25,7 @@
     font-family: $logo-font;
     font-size: 25px;
     color: $white;
+    text-decoration: none;
 }
 .footer__logo i {
     border-radius: 50px;
@@ -61,7 +62,7 @@
     transition: 0.3s;
 }
 .footer ul a:hover {
-    color: $teal;
+    @include texthover;
 }
 .footer ul li {
     margin: 10px 0;

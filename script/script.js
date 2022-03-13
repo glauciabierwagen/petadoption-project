@@ -13,3 +13,20 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  var like = document.getElementById("heart");
+
+  like.addEventListener("click",function(){
+    like.style.color = "#fff";
+  });
+
+
+
+$(".toggableIcon").each(function(){
+  if($(this).attr("data-permission-value")=="true")
+  {
+       $(this).addClass("greenIcon"); 
+  }else{
+      $(this).addClass("redIcon"); 
+  }
+ });

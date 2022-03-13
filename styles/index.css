@@ -72,6 +72,7 @@ main {
           box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
   color: #FFFFFF;
   border: none;
+  cursor: pointer;
 }
 
 .main__text-box button:hover {
@@ -205,11 +206,9 @@ body {
 
 .header__nav ul a:hover {
   font-weight: bold;
-  -webkit-transition: -webkit-transform 0.3s ease-in;
-  transition: -webkit-transform 0.3s ease-in;
-  transition: transform 0.3s ease-in;
-  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   letter-spacing: 2px;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .header__nav {
@@ -257,6 +256,7 @@ body {
   font-family: "Lemon", sans-serif;
   font-size: 25px;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .footer__logo i {
@@ -308,7 +308,10 @@ body {
 }
 
 .footer ul a:hover {
-  color: #00BBBB;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .footer ul li {
@@ -383,6 +386,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: 4px solid #7800B7;
+  border-bottom: 4px solid #7800B7;
 }
 
 .swiper {
@@ -454,7 +459,7 @@ section .card .image {
 
 .card .card-icon {
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,17 +475,14 @@ section .card .image {
 
 .card .card-icon i {
   color: #FFFFFF;
-  opacity: 0.6;
-  margin-top: 10px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  cursor: pointer;
+  opacity: 0.3;
 }
 
+/*
 .card .card-icon i:hover {
-  opacity: 1;
-}
-
+    transform: scale(1.2);
+    opacity: 1;
+}*/
 .card .card-name {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -544,15 +546,19 @@ section .card .image {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  opacity: 0.7;
   color: #7800B7;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
-  opacity: 1;
   color: #7800B7;
+}
+
+.card-heart {
+  position: absolute;
+  top: 15px;
+  right: 20px;
 }
 
 .adoptioninfo {
@@ -607,6 +613,7 @@ section .card .image {
           box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
   color: #FFFFFF;
   border: none;
+  cursor: pointer;
   margin-top: 25px;
 }
 

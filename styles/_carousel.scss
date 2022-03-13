@@ -21,6 +21,8 @@
     width: 100%;
     display: flex;
     align-items: center;
+    border-top: 4px solid $purple;
+    border-bottom: 4px solid $purple;
 } 
 .swiper {
     width: 70%;
@@ -71,23 +73,23 @@ section .card .image {
 }
 .card .card-icon {
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 20px;
     display: flex;
     flex-direction: column;
     align-items: center; 
-}
-.card .card-icon i { 
-    color: $white;
-    opacity: 0.6;
-    margin-top: 10px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.card .card-icon i:hover{
-    opacity: 1;
-}
   
+}
+.card .card-icon i {
+    color: $white;
+    opacity: 0.3;
+
+}
+/*
+.card .card-icon i:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}*/
 .card .card-name {
     display: flex;
     flex-direction: column;
@@ -130,13 +132,20 @@ section .card .image {
     background: $purple;
 }
 .swiper-button-next, .swiper-button-prev {
-    opacity: 0.7;
     color: $purple;
     transition: all 0.3s ease;
 }
 .swiper-button-next:hover, .swiper-button-prev:hover {
-    opacity: 1;
     color: $purple;
 }
-  
-  
+
+
+
+
+
+
+.card-heart {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}

@@ -7,6 +7,7 @@
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
     color: $white;
     border: none;
+    cursor: pointer;
 }
 @mixin smallTitle {
     font-size: 22px;
@@ -17,8 +18,8 @@
 }
 @mixin texthover {
     font-weight: bold;
-    transition: transform 0.3s ease-in; 
     letter-spacing: 2px;
+    transition: all 0.1s ease-in; 
 }
 @mixin buttonHoverPurple {
     transition: 0.3s ease-in; 
