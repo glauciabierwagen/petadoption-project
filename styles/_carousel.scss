@@ -3,9 +3,8 @@
 @import 'colors';
 @import 'fonts';
 
-.carousel-title {
-    text-align: center;
-    font-size: 25px;
+.carousel-title {    
+    @include small-title;
 }
 .container {
     min-height: 500px;

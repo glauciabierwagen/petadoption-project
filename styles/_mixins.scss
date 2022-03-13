@@ -8,4 +8,10 @@
     color: #FFFFFF;
     border: none;
 }
-      
+@mixin small-title {
+    font-size: 20px;
+    font-weight: 300;
+}
+@mixin span {
+    color: $purple;
+}

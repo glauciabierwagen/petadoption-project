@@ -1,6 +1,101 @@
 @use 'fonts';
 
-.section__footer {
+.footer {
+    width: 100%;
+    background: $purple;
+    display: block;
+    color: $white;
+}
+.inner-footer {
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.footer-items {
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: $white;
+}
+.footer__logotext {
+    font-family: $logo-font;
+    font-size: 25px;
+    color: $white;
+}
+.footer__logo i {
+    border-radius: 50px;
+    padding: 8px;
+    border: 3px solid $white;
+    color: $white;
+}
+.footer-items p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+    color: #fff;
+}
+.footer-items h3, .social-media h3 {
+    font-size: 20px;
+}
+.footer-items h3 {
+    margin-bottom: 15px;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.5px; 
+}
+ul a {
+    text-decoration: none;
+    text-transform: none;
+    outline: none;
+    color: $white;
+    transition: 0.3s;
+}
+ul a:hover {
+    color: $teal;
+}
+ul li {
+    margin: 10px 0;
+    height: 25px;
+}
+li i {
+    margin-right: 20px;
+}
+.social-media {
+    width: 25%;
+    color: $white;
+    text-align: center;
+}
+.social-media a {
+    text-decoration: none;
+}
+ 
+.social-media i {
+    margin: 20px 10px;
+    padding: 8px;
+    color: $white;
+    transition: 0.5s;
+    font-size: 25px;
+
+}
+ 
+.social-media i:hover {
+    transform: scale(1.1);
+}
+ 
+.footer-bottom {
+    padding: 10px;
+    background-color: $purple;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
 }
