@@ -5,13 +5,26 @@
     padding: 6px;
     border-radius: 50px;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
-    color: #FFFFFF;
+    color: $white;
     border: none;
 }
-@mixin small-title {
-    font-size: 20px;
+@mixin smallTitle {
+    font-size: 22px;
     font-weight: 300;
 }
 @mixin span {
     color: $purple;
+}
+@mixin texthover {
+    font-weight: bold;
+    transition: transform 0.3s ease-in; 
+    letter-spacing: 2px;
+}
+@mixin buttonHoverPurple {
+    transition: 0.3s ease-in; 
+    background-color: $purple;
+}
+@mixin buttonHoverTeal {
+    transition: 0.3s ease-in; 
+    background-color: $teal;
 }

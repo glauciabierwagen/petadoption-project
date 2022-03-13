@@ -32,17 +32,20 @@ main {
     display: flex;
     flex-direction: column;
 }
-.small {
-    @include small-title;
-}
-span {
+.main span {
     @include span;
+}
+.small-title {
+    @include smallTitle;
 }
 .title {
     font-size: 60px;
 }
-button {
+.main__text-box button {
     @include mybutton;
+}
+.main__text-box button:hover {
+    @include buttonHoverPurple;
 }
 .main__image {
     display: flex;
@@ -67,8 +70,6 @@ button {
     font-size: 30px;
     color: $purple;
 }
-
-
 
 
 

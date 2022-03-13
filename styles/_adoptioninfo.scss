@@ -10,7 +10,7 @@
 .adoptioninfo__container {
     display: flex;
     flex-direction: row;
-    min-height: 700px;
+    min-height: 680px;
     justify-content: center;
 }
 .adoptioninfo__textbox { 
@@ -23,17 +23,26 @@
     display: flex;
     width: 50%;
 }
-button {
+.adoptioninfo button {
     @include mybutton;
     margin-top: 25px;
+}
+.adoptioninfo button:hover {
+    @include buttonHoverPurple;
 }
 .adoptioninfo p {
     margin-top: 15px;
 }
+.adoptioninfo h2 {
+    font-size: 42px;
+}
+.adoptioninfo span {
+    @include span;
+}
 .icon-container {
     display: flex;
     align-items: center;
-    min-height: 200px;
+    min-height: 300px;
     justify-content: center;
 }
 .icon-box {

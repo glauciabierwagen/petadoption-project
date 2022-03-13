@@ -4,7 +4,9 @@
 @import 'fonts';
 
 .carousel-title {    
-    @include small-title;
+    @include smallTitle;
+    text-align: center;
+    margin-bottom: 10px;
 }
 .container {
     min-height: 500px;
@@ -92,7 +94,6 @@ section .card .image {
     align-items: center;
     margin-top: 10px;
 } 
-  
 .card-name .name {
     font-size: 20px;
     font-weight: 600;
@@ -114,9 +115,10 @@ section .card .image {
     transition: all 0.3s ease;
     cursor: pointer;
     min-width: 115px;
+    min-height: 40px;
 }
-.button button:hover {
-    background: $teal;
+.card .button button:hover {
+    @include buttonHoverTeal;
 }
 .swiper-pagination {
     position: absolute;
@@ -125,16 +127,16 @@ section .card .image {
     height: 7px;
     width: 26px;
     border-radius: 25px;
-    background: #7d2ae8;
+    background: $purple;
 }
 .swiper-button-next, .swiper-button-prev {
     opacity: 0.7;
-    color: #7d2ae8;
+    color: $purple;
     transition: all 0.3s ease;
 }
-.swiper-button-next:hover, .swiper-button-prev:hover{
+.swiper-button-next:hover, .swiper-button-prev:hover {
     opacity: 1;
-    color: #7d2ae8;
+    color: $purple;
 }
   
   
