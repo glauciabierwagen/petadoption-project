@@ -162,6 +162,25 @@ button:hover {
     align-self: center;
 }
 
+.link {
+    display: inline-block;
+    background-color: #00BBBB;
+    border: #7800B7;
+    border-style: solid;
+    border-width: 3px;
+    text-transform: uppercase;
+    padding: 0 2%;
+    text-align: center;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    a {
+        color: white;
+    }
+}
+
+.link a:hover {
+    color: pink;
+}
+
 .section__five {
     align-self: center;
 }
@@ -177,12 +196,19 @@ button:hover {
     width: 500px;
 }
 
+#contact a {
+    font-weight: bold;
+}
+#contact a:hover {
+    color: #7800B7
+}
+
 form {
-    min-height: 100%;
+    min-height: 60%;
     display: flex;
     box-sizing: border-box;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     border-width: 3px;
     border-color: #7800B7;
@@ -192,7 +218,7 @@ form {
     font-size: 1em;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
     input {
-        min-height: 15%;
+        min-height: 10%;
         margin-bottom: 3%;
     }
 }
