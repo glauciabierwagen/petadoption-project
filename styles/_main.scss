@@ -1,19 +1,77 @@
 @use 'fonts';
+@use 'colors';
+@import 'colors';
+@import 'fonts';
+@import 'mixins';
 
-body {
-    display: flex;
-    flex-direction: column;
-}
 
 main {
     display: flex;
+    width: 100%;
+    justify-content: center;
+    min-width: 1500px;
+}
+.main__container {
+    min-height: 100vh;
+    display: flex;
+    padding-top: 40px;
+    margin-top: 40px;
+    width: 80%;
+    justify-content: center;
+}
+.main__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 60%;
+    max-height: 500px;
+    font-family: $main-font; 
+    margin-top: 35px;
+    margin-left: 40px;
+}
+.main__text-box-txt {
+    display: flex;
     flex-direction: column;
 }
-
-.section {
-    max-width: 1500px;
-    width: 90%;
+.main span {
+    @include span;
 }
+.small-title {
+    @include smallTitle;
+}
+.title {
+    font-size: 50px;
+}
+.main__text-box button {
+    @include mybutton;
+}
+.main__text-box button:hover {
+    @include buttonHoverPurple;
+}
+.main__image {
+    display: flex;
+    align-items: center;
+    width: 70%; 
+    margin-left: 40px;
+}
+.main__image img {
+    max-width: 700px;
+    max-height: 750px;
+}
+.main__scroll {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    flex-direction: row;
+    width: 100%;
+}
+.main__scroll i {
+    font-size: 30px;
+    color: $purple;
+}
+
+
 
 @media  screen and (max-width: 600px) {
     .section {
