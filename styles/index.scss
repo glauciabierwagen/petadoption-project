@@ -7,14 +7,20 @@
 @import 'carousel';
 @import 'adoptioninfo';
 @import 'mixins';
+@import 'media';
+
 
 
 * {
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: $main-font;
     width: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }

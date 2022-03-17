@@ -4,10 +4,17 @@
 @import 'fonts';
 
 .carousel-title {    
-    @include smallTitle;
     text-align: center;
-    margin-bottom: 10px;
+    display: flex;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
 }
+.carousel-title h4 {
+    @include smallTitle;
+    font-weight: 500;
+}    
+
 .container {
     min-height: 500px;
     width: 100%;
@@ -104,7 +111,7 @@ section .card .image {
     min-width: 150px;
 }
 .card .button button {
-    background: $purple;
+    background: teal;
     outline: none;
     border: none;
     color: $white;
@@ -117,7 +124,7 @@ section .card .image {
     min-height: 40px;
 }
 .card .button button:hover {
-    @include buttonHoverTeal;
+    @include buttonHoverPurple;
 }
 .swiper-pagination {
     position: absolute;

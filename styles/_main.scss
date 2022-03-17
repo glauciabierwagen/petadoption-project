@@ -10,14 +10,15 @@ main {
     width: 100%;
     justify-content: center;
     min-width: 1500px;
+    min-height: 100vh;
 }
 .main__container {
-    min-height: 100vh;
     display: flex;
     padding-top: 40px;
     margin-top: 40px;
-    width: 80%;
+    width: 70%;
     justify-content: center;
+    max-height: 750px;
 }
 .main__text-box {
     display: flex;
@@ -39,7 +40,7 @@ main {
 .small-title {
     @include smallTitle;
 }
-.title {
+.main__title {
     font-size: 50px;
 }
 .main__text-box button {
@@ -51,7 +52,7 @@ main {
 .main__image {
     display: flex;
     align-items: center;
-    width: 70%; 
+    width: 80%; 
     margin-left: 40px;
 }
 .main__image img {
