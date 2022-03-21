@@ -1,9 +1,12 @@
 @use 'fonts';
-@import 'main';
 @import 'footer';
 @import 'header';
 
+
 //not real header and nav
+
+
+
 header {
     display: flex;
     flex-direction: row;
@@ -31,13 +34,30 @@ li:hover {
     transform: scale(1.2);
     font-weight: bold;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: fonts.$mainfont;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 //for all of main
 .section {
-    margin: 3% 0;
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 4%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 4%;
+    box-sizing: border-box;
 }
 
 a {
@@ -69,8 +89,12 @@ button:hover {
 }
 
 //page heading
-.section__one {
-    text-align: center;
+
+.img-section--1 {
+    max-width: 1500px;
+}
+.contact-img {
+    max-width: 100%;
 }
 
 //nav for page
@@ -79,48 +103,41 @@ button:hover {
     width: 100%;
 }
 
-.section__two {
+.section__options {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.section__two--heading {
+.section__options--heading {
         max-width: 30%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
 
-.section__two--options {
+.section__options--links {
         max-width: 50%;
 }
 
-.con-img1 {
-    max-width: 100%;
-}
 
-//content
-.section__info {
-    flex-direction: column;
-}
-
-//adopt-section
-.section__adopt {
+//find-section
+.section__find {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
 }
 
-.adopt-img {
-    max-width: 40%;
-    width:100%;  
+.img-section--2 {
+    max-width:40%;
+    width: 100%;  
 }
 
-.img-one {
+.find-img {
     max-width: 100%;
     width:100%;
     border-style: solid;
@@ -130,7 +147,7 @@ button:hover {
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
-.section__four {
+.section__find--info {
     align-self: center;
     max-width: 40%;
     border-style: solid;
@@ -156,13 +173,13 @@ button:hover {
     min-width: 20%;
 }
 
-.links-adopt {
+.links-find {
     display: flex;
     justify-content: space-between;
 }
 
 //information section
-.section__three {
+.section__adopt {
     align-self: center;
 }
 
@@ -185,23 +202,23 @@ button:hover {
     color: pink;
 }
 
-.section__five--heading {
+.section__company {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section__company--heading {
     max-width: 100%;
     width: 100%;
 }
-.section__five-info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-.section__five {
+.section__company__text {
     max-width: 50%;
     width: 100%;
 }
 
-.company__adress {
+.company__info {
     max-width: 35%;
     width: 100%;
     border-width: 3px;
@@ -213,7 +230,7 @@ button:hover {
 }
 
 //form section
-.section__form-info {
+.section__form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,10 +241,10 @@ button:hover {
     width: 500px;
 }
 
-#contact a {
+#form a {
     font-weight: bold;
 }
-#contact a:hover {
+#form a:hover {
     color: #7800B7
 }
 
@@ -274,50 +291,56 @@ input:hover {
         flex-direction: column;
         font-size: 16px;
     }
-    .links-adopt {
+    .links-find {
         flex-direction: column;
     }
 }
 
 @media screen and (max-width: 600px) {
     .section {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-    }
-    .section__two {
-        flex-direction: column;
         max-width: 100%;
-    }
-    .section__two--heading {
-        max-width: 100%;
-    }
-    .section__two--options {
-        max-width: 90%;
-    }
-    .section__adopt {
-        flex-direction: column;
-    }
-    .adopt-img {
-        max-width: 80%;
-    }
-    .section__four {
-        max-width: 80%;
+        width: 90%;
         text-align: center;
+        margin: 3% 0;
+    }
+    
+    .section__options--heading {
+        max-width: 100%;
+        width: 90%;
+    }
+    .section__options--links {
+        max-width: 100%;
+        width: 90%;
+    }
+   
+    .img-section--2 {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .section__find--info {
+        max-width: 100%;
+        width: 90%;
+    }
+    
+    .section__company__text {
+        max-width: 100%;
+        width: 90%;
     }
     .section__form {
         width: 90%;
     }
 
-    .section__five-info {
-        flex-direction: column;
-    }
+   
 
-    .section__five {
-        max-width: 100%;
-        margin: 2% 0;
-    }
-
-    .company__adress {
+    .company__info {
         max-width: 100%;
     }
-
+    form {
+        width: 100%;
+        margin: 3% 0;
+    }
 }
