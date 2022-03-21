@@ -5,147 +5,151 @@
 @import 'fonts';
 @import 'mixins';
 
-/*responsive nav*/
-.nav-container {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navcontainer {
+    padding: 20px 40px 20px 40px;
+    font-family: $main-font;
+    text-transform: uppercase;
 }
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    padding: 16px 32px;
-    letter-spacing: 1.8px;
-    background-color: $white;
-}
-nav img {
-    max-height: 50px;
-}
-.nav-container h1 {
-    font-family: $logo-font;
+a {
     color: $purple;
-    font-size: 30px;
+    text-decoration: none;
+    font-size: 20px;
 }
-.nav-container i {
-    font-size: 27px;
-    padding: 6px;
+.menu .logo {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+.menu .logo i {
+    font-size: 30px;
+    padding: 7px;
     border-radius: 50%;
     border: 2px solid $purple;
-    color: $purple;
-    margin-right: 6px;
 }
-.nav__logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.menu .logo .text {
+    font-family: $logo-font;
+    text-transform: none;
+    font-size: 37px;
 }
-.hamburger {
-    display: block;
-    position: relative;
-    z-index: 1;
-    user-select: none;
-    border: none;
-    outline: none;
-    background: none;
-    cursor: pointer;
+.menu,
+  .submenu {
+    list-style-type: none;
 }
-.menu a:hover {
-    @include texthover;
+.item {
+    padding: 10px;
 }
-.hamburger span {
-    display: block;
-    width: 33px;
-    height: 2px;
-    margin-bottom: 5px;
-    position: relative;
-    background-color: $purple;
-    border-radius: 6px;
-    z-index: 1;
-    transform-origin: 0 0;
-    transition: 0.4s;
-}
-.hamburger:hover span:nth-last-child(2) {
-    transform: translateX(10px);
-    background-color: $teal;
-}
-.hamburger.is-active span:nth-child(1) {
-    transform: translate(0px, -6px) rotate(45deg);
-}
-.hamburger.is-active span:nth-child(3) {
-    transform: translate(-3px, 3px) rotate(-45deg);
-}
-.hamburger.is-active span:nth-child(2) {
-    opacity: 0;
-    transform: translate(15px);
-}
-.hamburger.hamburger.is-active:hover span {
-    background-color: $teal;
-}
-.menu {
-    text-transform: uppercase;
-    display: none;
-    flex: 1 1 0%;
-    justify-content: flex-end;
-    margin: 0px -16px;
-}
-.menu a {
-    margin: 0 16px;
-    text-decoration: none;
-    transition: 0.4s;
-    padding: 8px 4px;
-    border-radius: 89px;
-    font-family: $main-font;
-}
-.mobile-nav {
-    position: fixed;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    min-height: 100vh;
-    display: block;
-    z-index: 98;
-    background-color: $white;
-
-    padding-top: 140px;
-
-    a {
-        text-decoration: none;
-        display: block;
-        text-align: center;
-        max-width: 200px;
-        width: 100%;
-        margin: 0 auto 16px;
-        padding: 12px 16px;
-        background-color: $purple;
-        font-weight: 300;
-        transition: 0.4s;
-        color: $white;
-    }
-    a:hover {
-        color: $teal;
-    }
-}
-.mobile-nav.is-active {
-    left: 0;
-}
-.menu a:hover {
+.item a:hover,
+.item a:hover::after {
     color: $teal;
 }
-@media (min-width: 768px) {
-    .hamburger {
-        display: none;
-    }
-    .menu {
-        display: flex;
-    }
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
-
-
-/*responsive nav*/
-
-
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+.menu li.subitem a {
+    padding: 15px;
+}
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+.item.button {
+    order: 2;
+}
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.active .item {
+    display: block;
+}
+/* Submenu mobile screens */
+.submenu {
+    display: none;
+}
+.submenu-active .submenu {
+    background-color: $purple;
+    display: block;
+}
+  .has-submenu i {
+    font-size: 12px;
+  }
+.has-submenu > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    content: "\f078";
+    color: $purple;
+    padding-left: 5px;
+}
+.subitem a {
+    padding: 10px 15px;
+    color: $white;
+}
+.submenu-active {
+    border-radius: 3px;
+}
+  
+/* Tablet menu */
+@media all and (min-width: 700px) {
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+      flex: 1;
+    }
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+    }
+    .toggle {
+      flex: 1;
+      text-align: right;
+      order: 2;
+    }
+  }
+/* Desktop menu */
+@media all and (min-width: 960px) {
+    .menu {
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      background: none;
+    }
+    .logo {
+      order: 0;
+    }
+    .item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+    }
+    .button {
+      order: 2;
+    }
+    .submenu-active .submenu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 68px;
+      background: $purple;
+    }
+    .toggle {
+      display: none;
+    }
+    .submenu-active {
+      border-radius: 0;
+    }
+  }
