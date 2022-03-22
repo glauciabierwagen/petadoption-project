@@ -13,14 +13,36 @@
 <title>Adopt Page</title>
 </head>
 <body>
-  <nav> <!--navigation-->
+<header> 
+  <!--<nav class="navcontainer">
+    <ul class="menu">
+      <div class="menu logo">
+        <li class="logo"><a href="#"><i class="fa-solid fa-paw"></i></a><a href="#" class="logo text">PetPal</a></li>
+      </div>
+      <li class="item"><a href="#">About</a></li>
+      <li class="item has-submenu">
+        <a>Adopt</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="../pages/adoptpage1.html">Adoption Process</a></li>
+          <li class="subitem"><a href="#">Cats</a></li>
+          <li class="subitem"><a href="#">Dogs</a></li>
+          <li class="subitem"><a href="#">Other</a></li>
+        </ul>
+      </li> 
+      <li class="item"><a href="#">Volunteer</a></li> 
+      <li class="item"><a href="#">Contact</a>
+      </li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+  </nav>-->
+  <nav> 
     <div class="nav-container">
       <div class="nav__logo">
         <a href="index.html"><i class="fa-solid fa-paw"></i></a>
         <h1>PetPal</h1>
       </div>
       <div class="menu">
-        <div class="dropdown">Adopt
+        <div class="dropdown"><span><a href="#">Adopt</a></span>
           <div class="dropdown-content">
             <a href="#">Adoption Process</a>
             <a href="#">Cats</a>
@@ -37,20 +59,21 @@
         <span></span>
       </button>
     </div>
-  </nav>  <!-- navigation end -->
+  </nav>
   <nav class="mobile-nav"><!-- mobile nav -->
     <a href="#adopt">Adopt</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav><!-- mobile nav end -->
+</header>
 <main class="main"><!-- main start; classes from main.css -->
-  <div class="main__container">
+  <div class="main__container space1">
     <div class="main__text-box">
       <div class="main__text-box-txt">
         <h1 class="main__title">Our <span> adoption process</span><br></h1>
-        <h5 class="small-title space"> Thank you for your interest in adopting a pet from us! <br><br>
-          Our animal shelter gives you the opportunity for dog adoption, cat adoption, and other animals. <br><br>
-          We are dedicated to bringing pets and owners together to create a humane community.<br><br>
+        <h5 class="small-title space"> 
+          Thank you for your interest in adopting a pet from us! <br><br>
+          We are dedicated to bringing pets (cats, dogs and other animals) and owners together to create a humane community.<br><br>
           Browse the website or view animals in person at our facility. 
         </h5>
         <button>Contact</button>
@@ -86,9 +109,9 @@
 <section><!-- section one end --> 
   <div class="adoptioninfo"><!-- section two "Adoptions included" start; classes from adoptinfo.css --> 
     <div class="adoptioninfo__container space1">
-      <div class="adoptioninfo__imagebox">
+      <!--<div class="adoptioninfo__imagebox">
         <div class="adoptioninfo__image"><img src="../images/adoption3.png"></div>
-      </div>
+      </div>-->
       <div class="adoptioninfo__textbox">
         <div class="adoptioninfo__text">
           <h5 class="small-title">Important to know</h5>
@@ -106,9 +129,36 @@
           <button>Contact</button>
         </div>
       </div>
+      <div class="adoptioninfo__imagebox">
+        <div class="adoptioninfo__image"><img src="../images/adoption3.png"></div>
+      </div>
     </div>
   </div>
 </section><!-- section two end -->
+<section><!-- section three "Adoption Fees"; classes from adoptinfo.css --> 
+  <div class="adoptioninfo">
+    <div class="adoptioninfo__container space1">
+      <div class="adoptioninfo__imagebox">
+        <div class="adoptioninfo__image"><img src="../images/adoption4.png"></div>
+      </div>
+      <div class="adoptioninfo__textbox">
+        <div class="adoptioninfo__text">
+          <h5 class="small-title">Responsabilities</h5>
+          <h2><span>With the animal </span>in the adoption <br><br></h2>
+          <h5 class="small-title">  
+            <p> You will be responsible for:</p>
+            <li class="space space2"> Provide nutritious food, adequate shelter, care and medical attention to the animal at all.</li>
+            <li class="space space2"> Notify us immediately if the cat  becomes ill within 30 days of the adoption; is lost or stolen at any time.</li>
+            <li class="space space2"> Notify us immediately if it enables to keep the cat, because we will assist in or-homing the cat or will place back 
+            in foster care.</li>
+          </h5>
+          <button>Contact</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section><!-- section three end --> 
 <section> <!-- icons pages volunteer, foster and donate; classes from adoptinfo.css -->
   <div class="icon-container">
     <div class="icon-box">
