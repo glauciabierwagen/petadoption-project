@@ -286,6 +286,13 @@ a {
     text-align: center;
     width: 500px;
 }
+
+.ad-link {
+    a:hover {
+        color: #7800B7;
+        font-weight: bold;
+    }
+}
 form {
     min-height: 60%;
     display: flex;

@@ -212,12 +212,30 @@ button:hover {
 
 .section__two {
   max-width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__two--heading {
+  text-align: center;
 }
 
 .pet {
   max-width: 80%;
-  float: left;
   margin-right: 2%;
+}
+
+.section__two--info {
+  max-width: 100%;
+  width: 80%;
 }
 
 .section__find {
@@ -573,12 +591,11 @@ button:hover {
   }
 
   .section__two {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    max-width: 80%;
-    text-align: center;
+    max-width: 100%;
+  }
+
+  .section__two--info {
+    text-align: start;
   }
 
   .section__find {
@@ -597,10 +614,6 @@ button:hover {
   .section__find--info {
     max-width: 80%;
     text-align: center;
-  }
-
-  .pet {
-    float: none;
   }
 
   .img-section--2 {
