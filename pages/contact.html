@@ -12,24 +12,39 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest"><script src="https://kit.fontawesome.com/1aafbbb739.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/7156552e14.js" crossorigin="anonymous"></script>    
+    <script src="https://kit.fontawesome.com/1aafbbb739.js" crossorigin="anonymous"></script>
     <title>Contact us</title>
 </head>
 <body>
+
+
     <header>
-        <div class="header__logo logo">
-            <a href="#"><img src="../images/paw-black-shape 1.png">
-            <img src="../images/logo.jpg"></a>
-        </div>
-        <nav class="header__nav">
-            <ul class="nav-bar">
-                <li><a href="#">Adopt</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact</a></li>
+        <nav class="navcontainer">
+            <ul class="menu">
+              <div class="menu logo">
+                <li class="logo"><a href="#"><i class="fa-solid fa-paw"></i></a><a href="#" class="logo text">PetPal</a></li>
+              </div>
+              <li class="item"><a href="#">About</a></li>
+              <li class="item has-submenu">
+                <a>Adopt</a>
+                <ul class="submenu">
+                  <li class="subitem"><a href="#">Adoption Process</a></li>
+                  <li class="subitem"><a href="#">Cats</a></li>
+                  <li class="subitem"><a href="#">Dogs</a></li>
+                  <li class="subitem"><a href="#">Other</a></li>
+                </ul>
+              </li> 
+              <li class="item"><a href="#">Volunteer</a></li> 
+              <li class="item"><a href="#">Contact</a>
+              </li>
+              <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
             </ul>
-        </nav>
+          </nav>
     </header>
-<!---lägg till rätt header och footer-->
+
+
     <main>
         <div class="section section__site-heading">
             <h1>Contact us</h1>
@@ -65,9 +80,9 @@
                 <div class="section__find--text">
                     <p>We have different kind of animals up for adoption. Our most common pets are cats and dogs, but we also offer adoption of rabbits, snakes and hamsters. </p>
                     <div class="links-find">
-                        <a class="go-to" href="#"><i class="fa fa-cat"></i>Cats</a>
-                        <a class="go-to" href="#"><i class="fa fa-dog"></i>Dogs</a>
-                        <a class="go-to" href="#"><i class="fa fa-dove"></i>Other pets</a>
+                        <button class="btn go-to-btn"><a class="go-to" href="adopt/cats.html"><i class="fa fa-cat"></i>Cats</a></button>
+                        <button class="btn go-to-btn"><a class="go-to" href="adopt/dogs.html"><i class="fa fa-dog"></i>Dogs</a></button>
+                        <button class="btn go-to-btn"><a class="go-to" href="adopt/other.html"><i class="fa fa-dove"></i>Other pets</a></button>
                     </div>
                 </div>
             </div>
@@ -86,9 +101,9 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, iste at! Non enim, eos qui eveniet blanditiis quasi soluta debitis quo est aliquam aut saepe animi quae laboriosam laborum perspiciatis.
                 </p>
             </div>
-            <div class="adopt__link">
+            <div class="btn adopt-btn">
                 <h5 class="link">
-                    <a href="#">Klick here to find more information about adopting.</a>
+                    <a href="adopt.html">Klick here to find more information about adopting.</a>
                 </h5>
             </div>
         </div>
@@ -102,19 +117,18 @@
                     <h5>Our vision</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, iste at! Non enim, eos qui eveniet blanditiis quasi soluta debitis quo est aliquam aut saepe animi quae laboriosam laborum perspiciatis.
                     </p>
-                    <div class="company__link">
-                        <h5 class="link"><a href="#">Klick here to find more information about the company.</a></h5>
+                    <div class="btn company-btn">
+                        <h5 class="link"><a href="about.html">Klick here to find more information about the company.</a></h5>
                     </div>
                 </div>
             </div>
             <div class="company__info">
-                <h5>Information</h5>
-                <p><u>Adress:</u></p>
-                <p>Kdjfhkdsdfjdlkjf 23, 345 54 klfgjdlkfjg</p>
-                <p><u>Phone:</u></p>                    
-                <p>+46 70546548521</p>                        
-                <p><u>Email:</u></p>                            
-                <p>pet-adoption@adoption.com</p>
+                <h3>Contact us</h3>
+              <ul>
+                <li><i class="fa-solid fa-phone"  aria-hidden="true"></i> 202-562-0195</li>
+               <li><i class="fa-solid fa-location-dot"></i> West Point, New York(NY), 10997</li>
+               <li><i class="fa fa-envelope" aria-hidden="true"></i> customerservice@petpal.com</li>
+              </ul> 
             </div>
         </div>
         
@@ -136,15 +150,48 @@
                 <input type="email" name="email" id="email" required minlength="6">
                 <label for="message" class="label">Message</label>
                 <input type="text" name="message" id="message" required maxlength="400">
-                <button type="submit">Send message</button> <!---ändra btn class och lägg till länkar som btn istället-->
+                <button class="form-btn" type="submit">Send message</button>
             </form>
         </div>
         
     </main>
     
-    <footer>
-        <img class="footer-img" src="../images/footer.jpg"> 
-    </footer>
-    
+    <div class="footer">
+        <div class="inner-footer">
+          <div class="footer-items">
+            <a href="#" class="footer__logo"><i class="fa-solid fa-paw"></i></a>
+            <a href="#" class="footer__logotext">PetPal</a>
+          </div>   
+          <div class="footer-items">
+            <h3>Quick Links</h3>
+              <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Search</li></a>
+                <a href="#"><li>Contact</li></a>
+                <a href="#"><li>About</li></a>
+              </ul>
+          </div>
+          <div class="footer-items contact">
+            <h3>Contact us</h3>
+              <ul>
+                <li><i class="fa-solid fa-phone"  aria-hidden="true"></i>202-562-0195</li>
+               <li><i class="fa-solid fa-location-dot"></i>West Point, New York(NY), 10997</li>
+               <li><i class="fa fa-envelope" aria-hidden="true"></i>customerservice@petpal.com</li>
+              </ul> 
+            </div>      
+            <div class="social-media">
+                <h3>Follow us</h3>
+                <div class="social-media__icons">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div> 
+          </div>
+        </div>
+        <div class="footer-bottom">
+          Copyright &copy; PetPal 2022.
+        </div>
+    <script src="../script/script.js"></script> 
 </body>
 </html>

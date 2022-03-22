@@ -1,0 +1,143 @@
+@use 'fonts';
+@use 'colors';
+
+.navcontainer {
+    padding: 20px 40px 20px 40px;
+    font-family: fonts.$main-font;
+    text-transform: uppercase;
+}
+a {
+    color: colors.$purple;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu .logo {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+.menu .logo i {
+    font-size: 30px;
+    padding: 7px;
+    border-radius: 50%;
+    border: 2px solid colors.$purple;
+}
+.menu .logo {
+    font-family: fonts.$logo-font;
+    text-transform: none;
+    font-size: 37px;
+}
+.menu
+  .submenu {
+    list-style-type: none;
+}
+.item {
+    padding: 10px;
+}
+.item a:hover,
+.item a:hover::after {
+    color: colors.$teal;
+}
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+.menu li.subitem a {
+    padding: 15px;
+}
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+.item.button {
+    order: 2;
+}
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.active .item {
+    display: block;
+}
+/* Submenu mobile screens */
+.submenu {
+    display: none;
+}
+.submenu-active .submenu {
+    background-color: colors.$purple;
+    display: block;
+}
+  .has-submenu i {
+    font-size: 12px;
+  }
+.has-submenu > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    
+    color: colors.$purple;
+    padding-left: 5px;
+}
+.subitem a {
+    padding: 10px 15px;
+    color: $white;
+}
+.submenu-active {
+    border-radius: 3px;
+}
+
+/* Desktop menu */
+@media screen and (min-width: 960px) {
+    .menu {
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      background: none;
+    }
+    .logo {
+      order: 0;
+    }
+    .item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+    }
+    .submenu-active .submenu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 68px;
+      background: colors.$purple;
+    }
+    .toggle {
+      display: none;
+    }
+    .submenu-active {
+      border-radius: 0;
+    }
+}
+/* Tablet menu */
+@media screen and (min-width: 700px) {
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+      flex: 1;
+    }
+    .toggle {
+      flex: 1;
+      text-align: right;
+      order: 2;
+    }
+}

@@ -1,7 +1,3 @@
-@use 'fonts';
-@import 'main';
-@import 'footer';
-@import 'header';
 
 //not real header and nav
 header {
@@ -72,7 +68,6 @@ button:hover {
 
 .section__two {
     max-width: 70%;
-
 }
 
 .pet {
