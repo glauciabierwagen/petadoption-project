@@ -161,10 +161,15 @@ button:hover {
     }
 .section__options--links {
         max-width: 50%;
+        
 }
 a {
     text-decoration: none;
     color: black;
+}
+
+.section__options--links li:hover {
+    transform: scale(1.2);
 }
 
 //find section
@@ -454,8 +459,8 @@ input:hover {
         flex-direction: column;
     }
     .company__info {
-        max-width: 80%;
-        
+        max-width: 100%;
+        width: 100%;
         align-self: center;
         margin-top: 3%;
     }
@@ -466,7 +471,6 @@ input:hover {
     .company__info ul {
         min-height: 150px;
         align-items: flex-start;
-       
     }
 }
 @media screen and (max-width: 850px) {
