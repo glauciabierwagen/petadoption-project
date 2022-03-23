@@ -9,8 +9,6 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 1500px;
-  min-height: 100vh;
 }
 
 .main__container {
@@ -665,6 +663,9 @@ section .card .image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 40%;
 }
 
@@ -774,7 +775,7 @@ section .card .image {
     font-weight: 400;
   }
   .adoptioninfo__textbox {
-    width: 10%;
+    width: 50%;
   }
   .adoptioninfo__image img {
     max-width: 300px;
@@ -782,28 +783,37 @@ section .card .image {
   }
 }
 
-@media screen and (max-width: 668px) {
-  .main__container {
+@media screen and (max-width: 910px) {
+  .inner-footer {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-items {
+    width: 100%;
+  }
+  .footer a {
+    font-size: 12px;
+  }
+  .footer-items h3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  .main__container {
+    width: 100%;
   }
   .main__text-box {
-    max-width: 200px;
+    width: 20%;
   }
-  .main__image img {
-    max-width: 300px;
-  }
-  .adoptioninfo__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .adoptioninfo__image img {
+    max-width: 250px;
   }
   .adoptioninfo__textbox {
     display: -webkit-box;
@@ -812,14 +822,13 @@ section .card .image {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
+    width: 40%;
   }
   .main__title {
     font-size: 35px;
   }
   .inner-footer {
     width: 100%;
-    background-color: aquamarine;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -845,15 +854,45 @@ section .card .image {
   }
 }
 
-@media screen and (max-width: 736px) and (orientation: landscape) {
+@media screen and (max-width: 736px) {
   .main__container {
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .main__text-box {
-    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
   }
-  .adoptioninfo__image img {
-    max-width: 250px;
+  .main__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .adoptioninfo__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .adoptioninfo__textbox {
     display: -webkit-box;
@@ -862,7 +901,16 @@ section .card .image {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 40%;
+    width: 80%;
+  }
+  .adoptioninfo__imagebox {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .main__title {
     font-size: 35px;
