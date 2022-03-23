@@ -13,7 +13,36 @@
 <title>Adopt Page - Other Pets </title>
 </head>
 <body>
-  <nav>
+<header><!--Start navigationv-->  
+  <nav class="navcontainer">
+    <ul class="menu">
+      <div class="menu logo">
+        <li class="logo"><a href="../index.html"><i class="fa-solid fa-paw"></i></a><a href="../index.html" class="logo text">PetPal</a></li>
+      </div>
+        <li class="item"><a href="aboutus.html">About</a></li>
+        <li class=" item dropdown"><a>Adopt</a>
+          <ul class="dropdown-content">
+            <li><a href="adopt.html">Adoption Process</a></li>
+            <li><a href="cats.html">Cats</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="other.html">Other animals</a></li>
+          </ul>
+        </li> 
+        <!--<li class="item has-submenu"><a>Adopt</a>
+          <ul class="submenu">
+            <li class="subitem"><a href="adopt.html">Adoption Process</a></li>
+            <li class="subitem"><a href="cats.html">Cats</a></li>
+            <li class="subitem"><a href="dogs.html">Dogs</a></li>
+            <li class="subitem"><a href="other.html">Other</a></li>
+          </ul>
+        </li>-->
+        <li class="item"><a href="volunteer.html">Volunteer</a></li> 
+        <li class="item"><a href="contact.html">Contact</a></li>
+        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+  </nav>
+</header><!--end navigation-->
+  <!--<nav>
     <div class="nav-container">
       <div class="nav__logo">
         <a href="index.html"><i class="fa-solid fa-paw"></i></a>
@@ -38,12 +67,7 @@
         <span></span>
       </button>
     </div>
-  </nav>
-  <nav class="mobile-nav"><!-- mobile nav -->
-    <a href="#adopt">Adopt</a>
-    <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-  </nav><!-- mobile nav end -->
+  </nav> -->
 <main class="main"><!-- main start; classes from main -->
   <div class="main__container">
     <div class="main__text-box">
@@ -51,7 +75,7 @@
         <h1 class="main__title"> &quot I am very happy with <span>my new friend &quot</span></h1>
         <hr/><hr/><br>
         <h5 class="small-title space space"><i>Ann</i></h5>
-        <button>Adopt</button>
+        <div class="button"><a href="adopt.html" target="_blank"> <button class="aboutMe">Adopt</button></a></div>
       </div>
     </div>
     <div class="main__image"><img src="../images/birdcare.png" alt="Mand and Dog"></div>
@@ -88,7 +112,7 @@
         <div class="card-icon"><i class="fa-solid fa-heart"></i></div>
         <div class="card-icon"><i class="fa-solid fa-heart"></i></div>
         <h2 class="card-name">Dixie and Bonnie</h2>
-        <p class="card__info">Male and Female, both 1 year</p>
+        <p class="card__info">Male and Female, <br> both 1 year</p>
         <div class="button"><a href="dixie_bonnie.html"> <button class="aboutMe"> About me </button></a></div>
       </div>
     </div>
@@ -103,9 +127,9 @@
       </div>
     </div>
   </div>
-</section>
-<section> 
-  <div class="adoptioninfo"><!-- adoption info start; classes from adoptioninfo.css -->
+</section><!--end second card one-->
+<section><!-- adoption info start; classes from adoptioninfo.css --> 
+  <div class="adoptioninfo">
     <div class="adoptioninfo__container space3">
       <div class="adoptioninfo__imagebox">
         <div class="adoptioninfo__image"><img src="../images/hamstercare.png"></div>
@@ -118,14 +142,13 @@
            All of our animals are spayed or neutered, 
             up to date on vaccinations, microchipped, and have been examined by a veterinarian.  
           <p class="space space2">
-            In adopting dogs, you should consider establishing household rules, routines and 
-            taking a dog training class.
+            In adopting birds, fur animals or others you should consider to know better about the 
+            habits and how to take care of it.
           </p>
           <p class="space space2">
-            Also is very important maniging the situations so your dog makes “good” choices and to have time 
-            and play with your dog.🐕
+            Also is very important maniging the situations in order to play with your animal.🐕
           </p>
-          <div> <a href="https://www.petfinder.com/pet-care/"target="_blank"> <button> Learn More </button> </a> </div><!--Free ebook-->
+          <div> <a href="https://www.petfinder.com/pet-care/" target="_blank"> <button> Learn More </button> </a> </div><!--Free ebook-->
         </div>
     </div>
   </div>
@@ -134,7 +157,7 @@
   <div class="icon-container"><!--icons pages volunteer, foster and donate; classes from adoptinfo.css -->
     <div class="icon-box">
       <div class="icon-icons">
-        <a href="#"><i class="fa-solid fa-hand-holding-medical"></i></a>
+        <a href="volunteer.html" target="_blank"><i class="fa-solid fa-hand-holding-medical"></i></a>
         <h3>Volunteer</h3>
       </div>
       <div class="icon-icons">
@@ -158,10 +181,10 @@
     <div class="footer-items">
       <h3>Quick Links</h3>
         <ul>
-          <a href="#"><li>Home</li></a>
+          <a href="../index.html" target="_blank"><li>Home</li></a>
           <a href="#"><li>Search</li></a>
-          <a href="#"><li>Contact</li></a>
-          <a href="#"><li>About</li></a>
+          <a href="contact.html" target="_blank"><li>Contact</li></a>
+          <a href="aboutus.html" target="_blank"><li>About</li></a>
         </ul>
     </div>
     <div class="footer-items contact">
@@ -175,17 +198,17 @@
       <div class="social-media">
         <h3>Follow us</h3>
           <div class="social-media__icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
           </div>
       </div> 
     </div>
   </div>
   <div class="footer-bottom">Copyright &copy; PetPal 2022.</div>
 </footer><!-- footer end -->
-      <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/script/script.js"></script> 
+<!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/script/script.js"></script> 
 </body>
 </html>

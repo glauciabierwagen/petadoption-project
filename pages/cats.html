@@ -13,27 +13,35 @@
 <title>Adopt Page - Cats </title>
 </head>
 <body>
-<header> 
+<header><!--Start navigationv-->  
   <nav class="navcontainer">
     <ul class="menu">
       <div class="menu logo">
         <li class="logo"><a href="../index.html"><i class="fa-solid fa-paw"></i></a><a href="../index.html" class="logo text">PetPal</a></li>
       </div>
         <li class="item"><a href="aboutus.html">About</a></li>
-        <li class="item has-submenu"><a>Adopt</a>
+        <li class=" item dropdown"><a>Adopt</a>
+          <ul class="dropdown-content">
+            <li><a href="adopt.html">Adoption Process</a></li>
+            <li><a href="cats.html">Cats</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="other.html">Other animals</a></li>
+          </ul>
+        </li> 
+        <!--<li class="item has-submenu"><a>Adopt</a>
           <ul class="submenu">
             <li class="subitem"><a href="adopt.html">Adoption Process</a></li>
             <li class="subitem"><a href="cats.html">Cats</a></li>
             <li class="subitem"><a href="dogs.html">Dogs</a></li>
             <li class="subitem"><a href="other.html">Other</a></li>
           </ul>
-        </li> 
+        </li>-->
         <li class="item"><a href="volunteer.html">Volunteer</a></li> 
         <li class="item"><a href="contact.html">Contact</a></li>
         <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
     </ul>
   </nav>
-</header>
+</header><!--end navigation-->
  <!--<nav>
     <div class="nav-container">
       <div class="nav__logo">
@@ -77,7 +85,7 @@
     </div>
     <div class="main__image"><img src="../images/catcare.png" alt="Playing with Cat"></div>
   </div>
-</main> <!-- main end -->
+</main><!-- main end -->
   <div class="carousel-title"> <!--title; class from carousel.css -->
     <h4>See some of our available cats below!</h4>
   </div><!--end title-->
@@ -124,8 +132,8 @@
       </div>
     </div>
   </div>
-</section>
-<section><!--section one; classes from adoptpage.css --> 
+</section><!-- second one end -->
+<section><!--section cards two; classes from adoptpage.css --> 
   <div class="container_adp">
     <div class="card_adp">
       <div class="card-content">
@@ -168,9 +176,9 @@
       </div>
     </div>
   </div>
-</section>
-<section> 
-  <div class="adoptioninfo"><!-- adoption info start; classes from adoptioninfo.css -->
+</section><!-- second two end -->
+<section><!-- adoption info start; classes from adoptioninfo.css --> 
+  <div class="adoptioninfo">
     <div class="adoptioninfo__container space3">
       <div class="adoptioninfo__imagebox">
         <div class="adoptioninfo__image"><img src="../images/catcare2.png"></div>
@@ -189,19 +197,18 @@
           <p class="space space2">
              Also is very important to have time and play with your cat.🐕
           </p>
-      
-        <div> <a href="https://icatcare.org/advice/?per_page=12" target="_blank"> <button> Learn More </button> </a></div>
+          <div> <a href="https://icatcare.org/advice/?per_page=12" target="_blank"> <button> Learn More </button> </a></div>
+        </div>
       </div>
-    </div>
     </div>
   </div>
 </section><!-- end adoption info-->
-<section> 
-  <div class="icon-container"><!--icons pages volunteer, foster and donate; classes from adoptinfo.css -->
+<section><!--icons section; volunteer, foster and donate; classes from adoptinfo.css --> 
+  <div class="icon-container">
     <div class="icon-box">
       <div class="icon-icons">
-        <a href="#"><i class="fa-solid fa-hand-holding-medical"></i></a>
-        <h3>Volunteer</h3>
+        <a href="volunteer.html" target="_blank"><i class="fa-solid fa-hand-holding-medical"></i>
+        <h3>Volunteer</h3></a>
       </div>
       <div class="icon-icons">
         <a href="#"><i class="fa-solid fa-house-chimney"></i></a>
@@ -212,8 +219,8 @@
         <h3>Donate</h3>
       </div>
     </div> 
-  </div> <!-- adoptioninfo end -->
-</section>
+  </div> 
+</section><!-- icons section end -->
 <footer> <!-- footer start -->
   <div class="footer">
     <div class="inner-footer">
@@ -224,10 +231,10 @@
     <div class="footer-items">
       <h3>Quick Links</h3>
         <ul>
-          <a href="#"><li>Home</li></a>
+          <a href="../index.html" target="_blank"><li>Home</li></a>
           <a href="#"><li>Search</li></a>
-          <a href="#"><li>Contact</li></a>
-          <a href="#"><li>About</li></a>
+          <a href="contact.html" target="_blank"><li>Contact</li></a>
+          <a href="aboutus.html" target="_blank"><li>About</li></a>
         </ul>
     </div>
     <div class="footer-items contact">
@@ -241,17 +248,17 @@
       <div class="social-media">
         <h3>Follow us</h3>
           <div class="social-media__icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
           </div>
       </div> 
     </div>
   </div>
   <div class="footer-bottom">Copyright &copy; PetPal 2022.</div>
 </footer><!-- footer end -->
-      <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/script/script.js"></script> 
+<!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/script/script.js"></script> 
 </body>
 </html>

@@ -3,6 +3,7 @@
 @import 'colors';
 @import 'fonts';
 @import 'mixins';
+@import 'media';
 
 .container_adp {
     min-height: 400px;
@@ -135,14 +136,14 @@ section .card_adp .image {
     z-index: 1;
   }
   
-.dropdown-content a {
+*.dropdown-content a {
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
+}
 
   .dropdown:hover {
     background-color:#ddd;
@@ -170,3 +171,39 @@ section .card_adp .image {
     padding-top: 100px;
     padding-bottom: 65px;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    
+    .container_adp { 
+        min-height: 200px;
+        max-width: 150px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card_adp {
+        min-height: 200px;
+        min-width: 120px;
+    }
+
+    .card-content {
+        min-height: 150px;
+        min-width: 100px;
+    }
+}
+/*@media  screen and (max-width: 700px) {
+    .container_adp { 
+    min-height: 200px;
+    max-width: 150px;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .card_adp { 
+        flex-wrap: wrap;
+    }
+}*/
