@@ -10,32 +10,33 @@
 <script src="https://kit.fontawesome.com/7156552e14.js" crossorigin="anonymous"></script>    
 <link rel="stylesheet" href="../styles/normalize.css">  <!-- link to normalize -->
 <link rel="stylesheet" href="../styles/index.css">  <!-- link to css -->
+<script src="https://kit.fontawesome.com/7156552e14.js" crossorigin="anonymous"></script>    
+<script src="https://kit.fontawesome.com/1aafbbb739.js" crossorigin="anonymous"></script>
 <title>Adopt Page</title>
 </head>
 <body>
-<header> 
-  <!--<nav class="navcontainer">
+<header><!--Start navigationv--> 
+  <nav class="navcontainer">
     <ul class="menu">
       <div class="menu logo">
-        <li class="logo"><a href="#"><i class="fa-solid fa-paw"></i></a><a href="#" class="logo text">PetPal</a></li>
+        <li class="logo"><a href="../index.html"><i class="fa-solid fa-paw"></i></a><a href="../index.html" class="logo text">PetPal</a></li>
       </div>
-      <li class="item"><a href="#">About</a></li>
-      <li class="item has-submenu">
-        <a>Adopt</a>
-        <ul class="submenu">
-          <li class="subitem"><a href="../pages/adoptpage1.html">Adoption Process</a></li>
-          <li class="subitem"><a href="#">Cats</a></li>
-          <li class="subitem"><a href="#">Dogs</a></li>
-          <li class="subitem"><a href="#">Other</a></li>
-        </ul>
-      </li> 
-      <li class="item"><a href="#">Volunteer</a></li> 
-      <li class="item"><a href="#">Contact</a>
-      </li>
-      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-    </ul>
-  </nav>-->
-  <nav> 
+        <li class="item"><a href="aboutus.html">About</a></li>
+        <li class="item has-submenu"><a>Adopt</a>
+          <ul class="submenu">
+            <li class="subitem"><a href="adopt.html">Adoption Process</a></li>
+            <li class="subitem"><a href="cats.html">Cats</a></li>
+            <li class="subitem"><a href="dogs.html">Dogs</a></li>
+            <li class="subitem"><a href="other.html">Other</a></li>
+          </ul>
+        </li> 
+        <li class="item"><a href="volunteer.html">Volunteer</a></li> 
+        <li class="item"><a href="contact.html">Contact</a></li>
+        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+  </nav>
+</header><!--end navigation-->
+  <!--<nav> 
     <div class="nav-container">
       <div class="nav__logo">
         <a href="index.html"><i class="fa-solid fa-paw"></i></a>
@@ -59,13 +60,12 @@
         <span></span>
       </button>
     </div>
-  </nav>
-  <nav class="mobile-nav"><!-- mobile nav -->
+  </nav>-->
+  <!--<nav class="mobile-nav">mobile nav 
     <a href="#adopt">Adopt</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
-  </nav><!-- mobile nav end -->
-</header>
+  </nav> mobile nav end -->
 <main class="main"><!-- main start; classes from main.css -->
   <div class="main__container space1">
     <div class="main__text-box">
@@ -76,7 +76,7 @@
           We are dedicated to bringing pets (cats, dogs and other animals) and owners together to create a humane community.<br><br>
           Browse the website or view animals in person at our facility. 
         </h5>
-        <button>Contact</button>
+        <div class="button"><a href="contact.html" target="_blank"> <button class="aboutMe">Contact</button></a></div>
       </div>
     </div>
       <div class="main__image">
@@ -100,7 +100,7 @@
             medical treatment, and proper care for your adopted companion. <br><br>
             Contact us about fees for dogs cats and other animals!<br><br>
           </h5>
-          <button>Contact</button>
+          <div class="button"><a href="contact.html" target="_blank"> <button class="aboutMe">Contact</button></a></div>
         </div>
       </div>
     </div>
@@ -126,7 +126,7 @@
             <li> DA2PP Vaccination(s) (dogs 8 weeks and older) <br><br></li>
             <li> Heartworm test (dogs 6 months and older) <br><br></li>
           </h5>
-          <button>Contact</button>
+          <div class="button"><a href="contact.html" target="_blank"> <button class="aboutMe">Contact</button></a></div>
         </div>
       </div>
       <div class="adoptioninfo__imagebox">
@@ -152,19 +152,18 @@
             <li class="space space2"> Notify us immediately if it enables to keep the cat, because we will assist in or-homing the cat or will place back 
             in foster care.</li>
           </h5>
-          <button>Contact</button>
+          <div class="button"><a href="contact.html" target="_blank"> <button class="aboutMe">Contact</button></a></div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section><!-- section three end --> 
 <section> <!-- icons pages volunteer, foster and donate; classes from adoptinfo.css -->
   <div class="icon-container">
     <div class="icon-box">
       <div class="icon-icons">
-        <a href="volunteer.hmtl"><i class="fa-solid fa-hand-holding-medical"></i></a>
-        <h3>Volunteer</h3>
+        <a href="volunteer.html" target="_blank"><i class="fa-solid fa-hand-holding-medical"></i>
+        <h3>Volunteer</h3></a>
       </div>
       <div class="icon-icons">
         <a href="#"><i class="fa-solid fa-house-chimney"></i></a>
@@ -187,10 +186,10 @@
       <div class="footer-items">
         <h3>Quick Links</h3>
           <ul>
-            <a href="#"><li>Home</li></a>
+            <a href="../index.html"><li>Home</li></a>
             <a href="#"><li>Search</li></a>
-            <a href="#"><li>Contact</li></a>
-            <a href="#"><li>About</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <a href="aboutus.html"><li>About</li></a>
           </ul>
       </div>
       <div class="footer-items contact">

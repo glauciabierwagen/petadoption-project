@@ -1,4 +1,6 @@
 @use 'fonts';
+@use 'colors';
+@use 'mixins';
 
 .footer {
     background: $purple;
