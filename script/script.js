@@ -1,3 +1,4 @@
+
 const hamburger = document.querySelector(".hamburger");
 const mobile_menu = document.querySelector(".mobile-nav");
 
