@@ -1,6 +1,7 @@
 @use 'fonts';
 @use 'colors';
 
+<<<<<<< HEAD
 //header
 .navcontainer {
     padding: 20px 40px 20px 40px;
@@ -101,6 +102,8 @@ ul {
 .submenu-active {
     border-radius: 3px;
 }
+=======
+>>>>>>> 7779fc180a61de591294c3ab21675c89878cba9c
 //for all of main
 body {
     display: flex;
@@ -183,6 +186,7 @@ input:hover {
     opacity: 0.3;
 }
 
+<<<<<<< HEAD
 //footer
 
 .footer {
@@ -279,6 +283,8 @@ input:hover {
 }
 
 
+=======
+>>>>>>> 7779fc180a61de591294c3ab21675c89878cba9c
 //media screen options
 /* Desktop menu */
 @media screen and (min-width: 960px) {
