@@ -13,7 +13,16 @@
     justify-content: center;
     background-color: $teal;
     padding: 10px 10px; 
+    @media only screen and (max-width: 700px) {
+        min-height: 100px;
+        max-width: 100px;
+        width: 100%;
+        align-items: center;
+        padding: 0px;;
+        flex-direction: column;
+     }
 }
+
 .card_adp {
     position: relative;
     background: #fff;
@@ -24,6 +33,13 @@
     margin: 20px;
     padding: 10px;
     justify-content: center;
+    /*@media screen and (min-width: 320px) {
+            width: 100%;
+            min-height: 100px;
+            min-width: 100px;
+            flex-wrap: wrap;
+           padding: 0px;
+       }*/
 }
 
 .card_adp::before {
@@ -173,28 +189,32 @@ section .card_adp .image {
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+/*@media screen and (min-width: 320px) {
 
     
-    .container_adp { 
-        min-height: 200px;
-        max-width: 150px;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .card_adp {
-        min-height: 200px;
-        min-width: 120px;
-    }
-
     .card-content {
         min-height: 150px;
-        min-width: 100px;
+        min-width: 150px;
     }
-}
+    .card-name .card_info {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+    
+    .card-icon .card_img .img_effect {
+        width: 100px;
+        height: 100px;
+        max-width: 80px;
+        padding: 0px;
+    }
+}*/
+
+
 /*@media  screen and (max-width: 700px) {
+
+
+
     .container_adp { 
     min-height: 200px;
     max-width: 150px;
