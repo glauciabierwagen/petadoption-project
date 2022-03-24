@@ -4,42 +4,369 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- link to fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- link to icons -->
+    <script src="https://kit.fontawesome.com/7156552e14.js" crossorigin="anonymous"></script>    
+    <!-- link to normalize -->
     <link rel="stylesheet" href="styles/normalize.css">
+    <!-- link to css -->
     <link rel="stylesheet" href="styles/index.css">
     <title>Pet adoption</title>
 </head>
 <body>
-    <header class="section section__header">
-        <div class="header__logo logo"></div>
-        <div class="header__nav nav">
-            <ul>
-                <li><a href="#">Adopt</a></li>
-                    <ul>
-                        <li><a href="#">Dogs</a></li>
-                        <li><a href="#">Cats</a></li>
-                        <li><a href="#">Other</a></li>
-                    </ul>
-                <li><a href="#">Care</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+     <!--navigation-->
+     <nav>
+      <div class="nav-container">
+        <div class="nav__logo">
+          <a href="index.html"><i class="fa-solid fa-paw"></i></a>
+          <h1>PetPat</h1>
         </div>
-    </header>
-
-    <main>
-        <div class="section section__one">
+        <div class="menu">
+          <a href="#adopt">Adopt</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </div>
-
-        <div class="section section__two">
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+      </div>
+  </nav>
+  <!-- navigation end -->
+  <!-- mobile nav -->
+  <nav class="mobile-nav">
+    <a href="#adopt">Adopt</a>
+    <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  </nav>
+  <!-- mobile nav end -->
+    <!-- main start -->
+    <main class="main">
+        <div class="main__container">
+        <div class="main__text-box">
+            <div class="main__text-box-txt">
+                <h5 class="small-title">Saving animals.<br>Changing lives.</h5>
+                <h1 class="main__title">Your <span>best friend</span><br>is waiting!</h1>
+                <button>Adopt</button>
+            </div>
         </div>
-
-        <div class="section section__three">
+        <div class="main__image">
+            <img src="/images/maindog.png">
         </div>
-
-        <div class="section section__four">
+    </div>
+    <div class="main__scroll">
+        <div class="main__scrollicon">
+            <i class="fa-solid fa-angle-down"></i>
         </div>
+    </div>
     </main>
-    <footer class="section section__footer">
-    </footer>
-    
+    <!-- main end -->
+    <!-- carousel start -->
+    <div class="carousel-title">
+        <h4>Latest Resques:</h4>
+    </div>
+    <div class="container">
+    <div class="carousel">
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+              <!-- card 1 -->
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="images/card-cat2.jpg" alt="">
+                  </div>
+                   <div class="card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card-name">
+                    <span class="name">Chelsey</span>
+                  </div>
+                  <div class="button">
+                    <button class="aboutMe">About me </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="images/card-dog2.png" alt="">
+                  </div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card-name">
+                    <span class="name">Codey</span>
+                  </div>
+                  <div class="button">
+                    <button class="aboutMe">About me </button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="images/card-cat1.png" alt="">
+                  </div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card-name">
+                    <span class="name"> Purrfect </span>
+                  </div>
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="images/card-dog1.png" alt="">
+                  </div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card-name">
+                    <span class="name"> Sam </span>
+                  </div>
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 5 -->
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="images/card-bunny1.jpg" alt="">
+                  </div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card-name">
+                    <span class="name">Fuzzy</span>
+                  </div>
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 6 -->
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="images/card-guineappig.jpg" alt="">
+                  </div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card-name">
+                    <span class="name">Bella</span>
+                  </div>
+                  <!-- card 7 -->
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="images/card-dog3.jpg" alt="">
+                  </div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <!-- card 8 -->
+                  <div class="card-name">
+                    <span class="name"> Rocky</span>
+                  </div>
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="images/card-cat3.jpg" alt="">
+                  </div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <!-- card 9 -->
+                  <div class="card-name">
+                    <span class="name">Daisy</span>
+                  </div>
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="images/card-dog5.jpg" alt="">
+                  </div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card-name">
+                    <span class="name">Zeke</span>
+                  </div>
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="images/card-cat4.jpg" alt="">
+                  </div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card-name">
+                    <span class="name">Muffins</span>
+                  </div>
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="images/card-cat5.jpg" alt="">
+                  </div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card-name">
+                    <span class="name">Simba</span>
+                  </div>
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="images/card-dog6.jpg" alt="">
+                  </div>
+                  <div class="card-icon">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <div class="card-name">
+                    <span class="name">Royal</span>
+                  </div>
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>   
+    </div>
+    <!-- carousel end -->
+    <!-- adoption info start -->
+    <div class="adoptioninfo">
+    <div class="adoptioninfo__container">
+        <div class="adoptioninfo__imagebox">
+            <div class="adoptioninfo__image">
+                <img src="/images/adoptioninfo-cat.png">
+            </div>
+        </div>
+        <div class="adoptioninfo__textbox">
+            <div class="adoptioninfo__text">
+                <h5 class="small-title">More than</h5>
+                <h2><span>157k.</span> adoptions</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Rerum nulla perspiciatis repellendus voluptatum quis veniam 
+                    deserunt aperiam et ab nemo voluptas est amet, veritatis 
+                    laudantium similique labore eaque hic. At?Lorem ipsum dolor sit, 
+                    amet consectetur adipisicing elit. Mollitia error doloribus animi, 
+                    vitae non maiores, est corporis quo voluptatem asperiores soluta ab, 
+                    tenetur ut illum dolore laborum fuga in. Possimus.</p>
+                <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icon-container">
+        <div class="icon-box">
+            <div class="icon-icons">
+                <a href="#"><i class="fa-solid fa-hand-holding-medical"></i></a>
+                <h3>Volunteer</h3>
+            </div>
+            <div class="icon-icons">
+                <a href="#"><i class="fa-solid fa-house-chimney"></i></a>
+                <h3>Foster</h3>
+            </div>
+            <div class="icon-icons">
+                <a href="#"><i class="fa-solid fa-hand-holding-dollar"></i></a>
+                <h3>Donate</h3>
+            </div>
+            <icon-text>
+            </icon-text>
+        </div> 
+    </div>
+    <!-- adoptioninfo end -->
+    <!-- footer start -->
+    <div class="footer">
+        <div class="inner-footer">
+          <div class="footer-items">
+            <a href="#" class="footer__logo"><i class="fa-solid fa-paw"></i></a>
+            <a href="#" class="footer__logotext">PetPal</a>
+          </div>   
+          <div class="footer-items">
+            <h3>Quick Links</h3>
+              <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Search</li></a>
+                <a href="#"><li>Contact</li></a>
+                <a href="#"><li>About</li></a>
+              </ul>
+          </div>
+          <div class="footer-items contact">
+            <h3>Contact us</h3>
+              <ul>
+                <li><i class="fa-solid fa-phone"  aria-hidden="true"></i>202-562-0195</li>
+               <li><i class="fa-solid fa-location-dot"></i>West Point, New York(NY), 10997</li>
+               <li><i class="fa fa-envelope" aria-hidden="true"></i>customerservice@petpal.com</li>
+              </ul> 
+            </div>      
+            <div class="social-media">
+                <h3>Follow us</h3>
+                <div class="social-media__icons">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div> 
+          </div>
+        </div>
+        <div class="footer-bottom">
+          Copyright &copy; PetPal 2022.
+        </div>
+      <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/script/script.js"></script> 
 </body>
 </html>

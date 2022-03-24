@@ -2,6 +2,28 @@
 @import 'main';
 @import 'header';
 @import 'footer';
+@import 'fonts';
+@import 'colors';
+@import 'carousel';
+@import 'adoptioninfo';
+@import 'mixins';
+@import 'media';
+@import 'adoptpage';
+@import 'pets';
+@import 'volunteer';
+@import 'contact';
+@import 'aboutus';
 
-
-
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $main-font;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
