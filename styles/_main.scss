@@ -3,19 +3,17 @@
 @import 'colors';
 @import 'fonts';
 @import 'mixins';
-@import 'media';
+
 
 main {
     display: flex;
     width: 100%;
     justify-content: center;
-    min-width: 1500px;
     min-height: 100vh;
 }
 .main__container {
     display: flex;
-    padding-top: 40px;
-    margin-top: 40px;
+    padding-top: 30px;
     width: 70%;
     justify-content: center;
     max-height: 750px;
@@ -23,7 +21,7 @@ main {
 .main__text-box {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: center;
     width: 60%;
     max-height: 500px;
     font-family: $main-font; 
@@ -51,14 +49,13 @@ main {
 }
 .main__image {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 80%; 
     margin-left: 40px;
 }
-
 .main__image img {
-    max-width: 700px;
-    max-height: 750px;
+    max-width: 550px;
+    max-height: 550px;
 }
 .main__scroll {
     display: flex;

@@ -8,7 +8,7 @@
 @import 'adoptioninfo';
 @import 'mixins';
 @import 'media';
-@import 'adoptpage';
+
 
 
 * {
@@ -19,7 +19,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: fonts.$main-font;
+    font-family: $main-font;
     width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;

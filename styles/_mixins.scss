@@ -1,5 +1,3 @@
-@use 'colors';
-
 @mixin mybutton {
     background-color: #00BBBB;
     width: 130px;
@@ -16,7 +14,7 @@
     font-weight: 300;
 }
 @mixin span {
-    color: colors.$purple;
+    color: $purple;
 }
 @mixin texthover {
     font-weight: bold;
@@ -25,9 +23,9 @@
 }
 @mixin buttonHoverPurple {
     transition: 0.3s ease-in; 
-    background-color: colors.$purple;
+    background-color: $purple;
 }
 @mixin buttonHoverTeal {
     transition: 0.3s ease-in; 
-    background-color: colors.$teal;
+    background-color: $teal;
 }
