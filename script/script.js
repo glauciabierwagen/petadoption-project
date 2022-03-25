@@ -1,6 +1,3 @@
-
-const hamburger = document.querySelector(".hamburger");
-const mobile_menu = document.querySelector(".mobile-nav");
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu");
 const items = document.querySelectorAll(".item");
@@ -44,12 +41,7 @@ for (let item of items) {
   }
   item.addEventListener("keypress", toggleItem, false);
 }
-
-
-hamburger.addEventListener("click", function () {
-    hamburger.classList.toggle("is-active");
-    mobile_menu.classList.toggle("is-active");
-});
+document.addEventListener("click", closeSubmenu, false);
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,

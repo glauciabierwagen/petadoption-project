@@ -16,13 +16,165 @@
         font-weight: 400;
     }
     .adoptioninfo__textbox { 
-        width: 10%;
+        width: 50%;
     }
     .adoptioninfo__image img {
         max-width: 300px;
         max-height: 300px;
     }
 }
+
+/* Desktop menu */
+@media all and (min-width: 960px) {
+    .menu {
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      background: none;
+    }
+    .logo {
+      order: 0;
+    }
+    .item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+    }
+    .button {
+      order: 2;
+    }
+    .submenu-active .submenu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 68px;
+      background: colors.$purple;
+    }
+    .toggle {
+      display: none;
+    }
+    .submenu-active {
+      border-radius: 0;
+    }
+}
+@media  screen and (max-width: 910px) {
+    .inner-footer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-items {
+        width: 100%;
+    }
+    .footer a {
+        font-size: 12px;
+    }
+    .footer-items h3 {
+        font-size: 15px;
+    }
+}
+
+@media  screen and (max-width: 736px) and (orientation : landscape) {
+    .main__container {
+        width: 100%;
+    }
+    .main__text-box {
+        width: 20%;
+    }
+    .adoptioninfo__image img {
+        max-width: 250px;
+    }   
+    .adoptioninfo__textbox {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+    }
+    .main__title {
+        font-size: 35px;
+    }
+    .inner-footer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-items {
+        width: 100%;
+    }
+    .social-media__icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media  screen and (max-width: 736px) {
+    .main__container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__text-box {
+        display: flex;
+        align-items: center;        
+        width: 100%;
+    }
+    .main__image  {
+        display: flex;
+        justify-content: center;
+    }
+    .adoptioninfo__container {
+        flex-direction: column;
+        align-items: center;    
+    }
+    .adoptioninfo__textbox {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    .adoptioninfo__imagebox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .main__title {
+        font-size: 35px;
+    }
+    .inner-footer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-items {
+        width: 100%;
+    }
+    .social-media__icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+      flex: 1;
+    }
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+    }
+    .toggle {
+      flex: 1;
+      text-align: right;
+      order: 2;
+    }
+}
+
 @media  screen and (max-width: 668px) {
     .main__container {
         width: 100%;
@@ -62,39 +214,6 @@
         justify-content: center;
     }
 }
-@media  screen and (max-width: 736px) and (orientation : landscape) {
-    .main__container {
-        width: 100%;
-    }
-    .main__text-box {
-        width: 20%;
-    }
-    .adoptioninfo__image img {
-        max-width: 250px;
-    }   
-    .adoptioninfo__textbox {
-        display: flex;
-        justify-content: center;
-        width: 40%;
-    }
-    .main__title {
-        font-size: 35px;
-    }
-    .inner-footer {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-items {
-        width: 100%;
-    }
-    .social-media__icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-}
-
 
 
 

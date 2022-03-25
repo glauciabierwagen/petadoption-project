@@ -9,10 +9,7 @@
 @import 'mixins';
 @import 'media';
 @import 'adoptpage';
-@import 'pets';
-@import 'volunteer';
-@import 'contact';
-@import 'aboutus';
+
 
 * {
     margin: 0;
@@ -22,7 +19,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: $main-font;
+    font-family: fonts.$main-font;
     width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;

@@ -17,33 +17,31 @@
     <title>Pet adoption</title>
 </head>
 <body>
-     <!--navigation-->
-     <nav>
-      <div class="nav-container">
-        <div class="nav__logo">
-          <a href="index.html"><i class="fa-solid fa-paw"></i></a>
-          <h1>PetPat</h1>
-        </div>
-        <div class="menu">
-          <a href="#adopt">Adopt</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <button class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+  <nav class="navcontainer">
+    <ul class="menu">
+      <div class="menu logo">
+        <li class="logo"><a href="index.html"><i class="fa-solid fa-paw"></i></a><a href="index.html" class="logo text">PetPal</a></li>
       </div>
+
+
+      <li class="item"><a href="pages/aboutus.html">About</a></li>
+
+      <li class="item has-submenu">
+        <a>Adopt</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="pages/adopt.html">Adoption Process</a></li>
+          <li class="subitem"><a href="pages/cats.html">Cats</a></li>
+          <li class="subitem"><a href="pages/dogs.html">Dogs</a></li>
+          <li class="subitem"><a href="pages/other.html">Other</a></li>
+        </ul>
+      </li> 
+      <li class="item"><a href="pages/volunteer">Volunteer</a></li> 
+      <li class="item"><a href="pages/contact">Contact</a>
+      </li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
   </nav>
-  <!-- navigation end -->
-  <!-- mobile nav -->
-  <nav class="mobile-nav">
-    <a href="#adopt">Adopt</a>
-    <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-  </nav>
-  <!-- mobile nav end -->
+
     <!-- main start -->
     <main class="main">
         <div class="main__container">
@@ -55,12 +53,7 @@
             </div>
         </div>
         <div class="main__image">
-            <img src="/images/maindog.png">
-        </div>
-    </div>
-    <div class="main__scroll">
-        <div class="main__scrollicon">
-            <i class="fa-solid fa-angle-down"></i>
+            <img src="images/maindog.png">
         </div>
     </div>
     </main>
@@ -290,7 +283,7 @@
     <div class="adoptioninfo__container">
         <div class="adoptioninfo__imagebox">
             <div class="adoptioninfo__image">
-                <img src="/images/adoptioninfo-cat.png">
+                <img src="images/adoptioninfo-cat.png">
             </div>
         </div>
         <div class="adoptioninfo__textbox">
@@ -367,6 +360,6 @@
         </div>
       <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/script/script.js"></script> 
+    <script src="script/script.js"></script> 
 </body>
 </html>
