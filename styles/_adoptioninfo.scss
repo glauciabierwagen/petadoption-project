@@ -23,6 +23,11 @@
     max-height: 500px;
 }
 
+.card_img img {
+    max-width: 100%;
+    width: 100%;
+}
+
 .adoptioninfo button {
     @include mybutton;
     margin-top: 25px;
