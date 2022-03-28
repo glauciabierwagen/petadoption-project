@@ -14,7 +14,6 @@
     @include smallTitle;
     font-weight: 500;
 }    
-
 .container {
     min-height: 500px;
     width: 100%;
@@ -104,14 +103,8 @@ section .card .image {
     font-size: 20px;
     font-weight: 600;
 }
-.card .button {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    min-width: 150px;
-}
 .card .button button {
-    background: teal;
+    background: $teal;
     outline: none;
     border: none;
     color: $white;
@@ -121,10 +114,18 @@ section .card .image {
     transition: all 0.3s ease;
     cursor: pointer;
     min-width: 115px;
-    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    max-width: 90px;
+    max-height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .card .button button:hover {
     @include buttonHoverPurple;
+    transform: none;
 }
 .swiper-pagination {
     position: absolute;

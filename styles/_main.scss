@@ -9,14 +9,13 @@ main {
     display: flex;
     width: 100%;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 700px;
 }
 .main__container {
     display: flex;
-    padding-top: 30px;
     width: 70%;
     justify-content: center;
-    max-height: 750px;
+    max-height: 700px;
 }
 .main__text-box {
     display: flex;
@@ -42,7 +41,12 @@ main {
     font-size: 50px;
 }
 .main__text-box button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include mybutton;
+    font-size: 20px;
+
 }
 .main__text-box button:hover {
     @include buttonHoverPurple;
@@ -57,20 +61,6 @@ main {
     max-width: 550px;
     max-height: 550px;
 }
-.main__scroll {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    flex-direction: row;
-    width: 100%;
-}
-.main__scroll i {
-    font-size: 30px;
-    color: $purple;
-}
-
-
 
 @media  screen and (max-width: 600px) {
     .section {

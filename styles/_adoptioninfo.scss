@@ -22,15 +22,17 @@
 .adoptioninfo__imagebox img { 
     max-height: 500px;
 }
-
 .card_img img {
     max-width: 100%;
     width: 100%;
 }
-
 .adoptioninfo button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include mybutton;
     margin-top: 25px;
+    font-size: 15px;
 }
 .adoptioninfo button:hover {
     @include buttonHoverPurple;
