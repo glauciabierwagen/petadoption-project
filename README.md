@@ -2,7 +2,7 @@
 <b> Animals Adoption Project </b>
 <br>
 <p align="center">
-  <img src="https://github.com/glauciabierwagen/bootstrap/blob/main/images/readmeimage.png"  heigth="750"/>
+  <img src="https://github.com/glauciabierwagen/petadoption-project/blob/main/images/readmeimage1.png"  heigth="750"/>
 </p>
 
 #
