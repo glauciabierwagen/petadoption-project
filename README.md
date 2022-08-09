@@ -9,7 +9,7 @@
 
 <p align="center">
   <img src="https://github.com/glauciabierwagen/petadoption-project/blob/main/images/readmeimage2a.png"  heigth="750"/>
-   <img src="https://github.com/glauciabierwagen/petadoption-project/blob/main/images/readmeimage2a.png"  heigth="750"/>
+   <img src="https://github.com/glauciabierwagen/petadoption-project/blob/main/images/readmeimage2b.png"  heigth="750"/>
 </p>
 
 #
