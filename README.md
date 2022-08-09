@@ -1,5 +1,21 @@
 # Petadoption's Project
 <b> Animals Adoption Project </b>
+<br>
+<p align="center">
+  <img src="https://github.com/glauciabierwagen/bootstrap/blob/main/images/readmeimage.png"  heigth="750"/>
+</p>
+
+#
+
+<p align="center">
+  <img src="https://github.com/glauciabierwagen/bootstrap/blob/main/images/readmeimage.png"  heigth="750"/>
+</p>
+
+#
+<p align="center">
+  <img src="https://github.com/glauciabierwagen/bootstrap/blob/main/images/readmeimage.png"  heigth="750"/>
+</p>
+
 
 ## Guidelines 
 
